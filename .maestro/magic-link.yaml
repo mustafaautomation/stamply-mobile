@@ -1,0 +1,17 @@
+appId: com.quvantic.stamply
+---
+- launchApp
+- tapOn:
+    id: email-input
+- inputText: new.guest@example.com
+- tapOn:
+    id: send-magic-link
+- assertVisible:
+    id: magic-code
+- tapOn:
+    id: code-input
+- inputText: '000000'
+- tapOn:
+    id: verify-code
+- assertVisible:
+    id: empty-wallet

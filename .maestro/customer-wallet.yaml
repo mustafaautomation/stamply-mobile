@@ -1,0 +1,15 @@
+appId: com.quvantic.stamply
+---
+- launchApp
+- tapOn:
+    id: demo-lina
+- assertVisible:
+    id: wallet-title
+- assertVisible: Harbor & Rye
+- tapOn:
+    id: card_lina_espresso
+- assertVisible:
+    id: stamp-progress
+- assertVisible: 5 of 8
+- assertVisible:
+    id: customer-qr

@@ -1,0 +1,34 @@
+appId: com.quvantic.stamply
+---
+- launchApp
+- tapOn:
+    id: demo-omar
+- tapOn: Counter
+- tapOn:
+    id: open-scanner
+- tapOn:
+    id: token-input
+- inputText: stmp_lina_espresso
+- tapOn:
+    id: lookup-token
+- tapOn:
+    id: pin-input
+- inputText: '2468'
+- tapOn:
+    id: add-stamp
+- assertVisible:
+    id: stamp-result
+- tapOn:
+    id: back-button
+- tapOn:
+    id: token-input
+- eraseText
+- inputText: stmp_jonah_espresso
+- tapOn:
+    id: lookup-token
+- tapOn:
+    id: pin-input
+- inputText: '2468'
+- tapOn:
+    id: redeem
+- assertVisible: redeemed
